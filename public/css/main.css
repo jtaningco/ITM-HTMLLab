@@ -11,10 +11,143 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito+Sans&family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+    width: 100vw;
+    height: 10vh;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background: transparent;
+}
+
+.nav-logo {
+  display: flex;
+  flex-basis: 30%;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  padding-left: 96px;
+}
+
+.nav-logo img {
+  width: 56px;
+  height: 56px;
+}
+
+.nav-menu {
+  display: flex;
+  flex-basis: 70%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding-right: 96px;
+}
+
+.nav-items {
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  list-style: none;
+}
+
+.nav-item {
+  margin: 0 40px;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-weight: 300;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-link { color: #f8f8f8; }
+.nav-link:hover { color: #ffffff; font-size: 18px; }
+
+.footer {
+  width: 100vw;
+  height: 360px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background: #F8F8F8;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.footer-content h1 {
+  font-family: 'Parisienne', cursive;
+  font-size: 32px;
+  font-weight: 300;
+  padding: 16px 0;
+}
+
+.footer-content p {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 300;
+  color: rgba(0,0,0,0.8);
+  padding: 0 0 32px 0;
+}
+
+.footer-line {
+  display: block;
+  border: 1px solid #F0F0F0;
+  width: 1080px;
+  margin: 32px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.footer-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  list-style: none;
+  margin: 8px 0;
+}
+
+.footer-item { margin: 0 40px; }
+
+.footer-link {
+  text-decoration: none;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 1%;
+  color: var(--black);
 }
 
 /*

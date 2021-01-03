@@ -1,0 +1,166 @@
+.espresso-hero {
+    background: url('../static/background/home.jpg') rgba(0,0,0,0.25);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+}
+
+.hero-container {
+    width: 100vw;
+    height: 40vh;
+}
+
+.espresso-info {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 80px 0;
+}
+
+.espresso-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.espresso-wrapper {
+    width: 85%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.espresso-content {
+    display: flex;
+    flex-basis: 60%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+    padding-left: 96px;
+}
+
+.espresso-content h1 {
+    font-family: 'Parisienne', cursive;
+    font-size: 80px;
+    padding: 8px 0;
+}
+
+.espresso-content p {
+    width: 75%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 16px 0 40px 0;
+}
+
+.espresso-content h2 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: rgba(0,0,0,0.5);
+}
+
+.espresso-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+}
+
+.order-button {
+    cursor: pointer;
+    appearance: button;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 180px;
+    height: 40px;
+    border: 2px solid #311309;
+    color: #311309;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+
+.order-button::before, .order-button::after {
+    background: transparent;
+    content: '';
+    position: absolute;
+    z-index: -1;
+}
+
+.order-button:hover {
+    color: white;
+    background: #311309;
+}
+
+.order-button::after {
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 0;
+}
+
+.order-button:hover:after {
+    width: 100%;
+}
+
+.back-button {
+    display: flex;
+    width: 20%;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    padding: 16px 0;
+}
+
+.fa-angle-left {
+    color: rgba(0,0,0,0.5);
+}
+
+.back-button a {
+    text-decoration: none;
+    padding: 8px;
+    color: rgba(0,0,0,0.5);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 500ms ease-in-out;
+}
+
+.back-button a:hover {
+    color: rgba(0,0,0,1);
+}
+
+.espresso-image {
+    display: flex;
+    flex-basis: 40%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-right: 96px;
+    transition: all 500ms ease-in-out;
+}
+
+.espresso-image:hover {
+    margin-top: -16px;
+    transform: scale(1.05);
+    transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+}
