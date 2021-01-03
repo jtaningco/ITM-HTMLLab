@@ -1,5 +1,5 @@
 .products-hero {
-    background: url('../static/background/home-2.jpg') rgba(255,255,255,0.1);
+    background: url('../static/background/home.jpg') rgba(0,0,0,0.25);
     background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode: overlay;
@@ -20,12 +20,19 @@
 }
 
 .products-container {
-    width: 90%;
+    width: 80%;
     height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     align-content: center;
+}
+
+.products-container h1 {
+    font-family: 'Parisienne', cursive;
+    font-size: 56px;
+    padding: 96px 0 24px 0;
 }
 
 .products-wrapper {
@@ -51,13 +58,23 @@
     border-radius: 5px;
     background-repeat: no-repeat;
     background-blend-mode: overlay;
+    transition: all 500ms ease-in-out;
+}
+
+.product-card:hover {
+    margin-top: -8px;
+    box-shadow: 0 12px 30px 0px rgba(0,0,0,0.3);
+    transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 #espresso { background: url('../static/images/espresso.jpg') rgba(0,0,0,0.2); background-size: 100% 100%; }
 #macchiato { background: url('../static/images/macchiato.jpg') rgba(0,0,0,0.2); background-size: 100% 100%; }
-#latte { background: url('../static/images/latte.jpg') rgba(0,0,0,0.3); background-size: 100% 100%; }
+#latte { background: url('../static/images/latte.jpg') rgba(0,0,0,0.2); background-size: 100% 100%; }
 #flat-white { background: url('../static/images/flat-white.jpg') rgba(0,0,0,0.3); background-size: 100% 100%; }
 #cappucino { background: url('../static/images/cappucino.jpg') rgba(0,0,0,0.3); background-size: 100% 100%; }
+#mocha { background: url('../static/images/mocha.jpg') rgba(0,0,0,0.3); background-size: 100% 100%; }
+#americano { background: url('../static/images/americano.jpg') rgba(0,0,0,0.3); background-size: 100% 100%; }
+#con-panna { background: url('../static/images/con-panna.jpg') rgba(0,0,0,0.3); background-size: 100% 100%; }
 
 .product-content {
     width: 80%;
